@@ -1,0 +1,215 @@
+body
+{
+    font: 11pt "Lucida Grande", "Lucida Sans Unicode", "Bitstream Vera Sans", sans-serif;
+    color: #FFFFFF;
+    background: #CCCCCC;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+a:link
+{
+    color: #CCFFFF;
+}
+a:visited
+{
+    color: #CCFFFF;
+}
+a:hover
+{
+    color: #FF0000;
+}
+h1
+{
+    font-size: 200%;
+    color: #FFFFFF;
+	text-align: center;
+	margin: 0.3em;
+}
+h2
+{
+    color: #FFFFFF;
+    font-size: 175%;
+	text-align: center;
+	margin: 0.3em;
+}
+h3
+{
+    font-size: 135%;
+    color: #99FFFF;
+    text-decoration: underline;
+	margin: 0.5em 0;
+}
+h4
+{
+    color: #FFFFFF;
+    font-size: 100%;
+    font-weight: bold;
+	margin: 0.1em 0;
+}
+p
+{
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+ul
+{
+	margin: 0 0 0 25px;
+	padding: 0;
+	list-style-type: square;
+}
+ul li pre
+{
+	margin: 5px 5px 5px 15px;
+	padding: 5px 5px 5px 10px;
+	font: 7.5pt Courier New, monospace;
+	border-left: 2px solid #999;
+	display: none;
+}
+.underlined
+{
+	text-decoration: underline;
+}
+#nav
+{
+	display: block;
+	position: fixed !important;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 50px;
+	z-index: 2;
+	background: #444466;
+    -webkit-box-shadow: #999 0 5px 5px;
+    -moz-box-shadow: #999 0 5px 5px;
+	box-shadow: #999 0 5px 5px;
+	behavior: url(PIE.htc);
+}
+#nav div
+{
+	width: 880px;
+	margin: 15px auto 15px auto;
+}
+#nav ul
+{
+	display: block;
+	list-style: none;
+	float: right;
+	width: 100%;
+}
+#nav li
+{
+	float: left;
+}
+#nav li a
+{
+	background: #DDEEEE;
+	border: 2px solid #CCCCCC;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #333333;
+	font-size: 110%;
+	margin: 0 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+	behavior: url(PIE.htc);
+}
+#nav li a:hover
+{
+	color: #FF0000;
+}
+#main
+{
+    width: 880px;
+    margin: 50px auto 50px auto;
+    text-align: left;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+    z-index: 1;
+}
+.block
+{
+    background: #CCCCCC;
+    padding: 0 0 15px 0;
+    margin: 0;
+}
+.inner
+{
+    background: #7788AA;
+    padding: 15px 50px 35px 50px;
+    margin: 0;
+    -moz-border-radius: 25px 55px 25px 55px;
+    -webkit-border-radius: 25px 55px 25px 55px;
+    border-radius: 25px 55px 25px 55px;
+    border: 2px solid black;
+    -webkit-box-shadow: #999 0 5px 5px;
+    -moz-box-shadow: #999 0 5px 5px;
+    box-shadow: #999 0 5px 5px;
+    position: relative;
+    behavior: url(PIE.htc);
+}
+.inner p
+{
+	text-indent: 20px;
+	padding: 10px 0 10px 0;
+}
+#home .inner
+{
+    -moz-border-radius: 0px 0px 25px 55px;
+    -webkit-border-radius: 0px 0px 25px 55px;
+    border-radius: 0px 0px 25px 55px;
+	behavior: url(PIE.htc);
+}
+#banner .logo
+{
+	background: transparent url(iccv13.jpg) no-repeat center center;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 25px 55px 0px 0px;
+    -moz-border-radius: 25px 55px 0px 0px;
+    -webkit-border-radius: 25px 55px 0px 0px;
+	behavior: url(PIE.htc);
+}
+#banner
+{
+	height: 250px;
+	width: 100%;
+	position: relative;
+}
+#banner .content
+{
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	position: relative;
+	background: rgba(100, 100, 100, 0.5);
+	-pie-background: rgba(100, 100, 100, 0.5);
+	border-radius: 25px 55px 0px 0px;
+    -moz-border-radius: 25px 55px 0px 0px;
+    -webkit-border-radius: 25px 55px 0px 0px;
+	behavior: url(PIE.htc);
+}
+#banner .content div
+{
+	padding-left: 40px;
+	padding-top: 50px;
+}
+.new
+{
+	background-color: yellow;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px #000000 solid;
+	padding: 1px;
+}
+.center
+{
+	text-align: center;
+}
