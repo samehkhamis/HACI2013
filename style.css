@@ -36,17 +36,15 @@ h2
 }
 h3
 {
-    font-size: 135%;
+    font-size: 150%;
     color: #99FFFF;
-    text-decoration: underline;
 	margin: 0.5em 0;
 }
 h4
 {
     color: #FFFFFF;
-    font-size: 100%;
-    font-weight: bold;
-	margin: 0.1em 0;
+    font-size: 110%;
+	margin: 0.6em 0;
 }
 p
 {
@@ -88,15 +86,15 @@ ul li pre
 }
 #nav div
 {
-	width: 880px;
+	width: 920px;
 	margin: 15px auto 15px auto;
 }
 #nav ul
 {
 	display: block;
 	list-style: none;
-	float: right;
-	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 #nav li
 {
@@ -122,7 +120,7 @@ ul li pre
 }
 #main
 {
-    width: 880px;
+    width: 920px;
     margin: 50px auto 50px auto;
     text-align: left;
     padding: 15px 15px 15px 15px;
@@ -164,7 +162,7 @@ ul li pre
 }
 #banner .logo
 {
-	background: transparent url(iccv13.jpg) no-repeat center center;
+	/*background: transparent url(iccv13.jpg) 920px 250px no-repeat center center;*/
 	z-index: 1;
 	position: absolute;
 	top: 0;
@@ -188,8 +186,8 @@ ul li pre
 	width: 100%;
 	z-index: 2;
 	position: relative;
-	background: rgba(100, 100, 100, 0.5);
-	-pie-background: rgba(100, 100, 100, 0.5);
+	background: rgba(100, 100, 100, 0.4);
+	-pie-background: rgba(100, 100, 100, 0.4);
 	border-radius: 25px 55px 0px 0px;
     -moz-border-radius: 25px 55px 0px 0px;
     -webkit-border-radius: 25px 55px 0px 0px;
@@ -208,6 +206,15 @@ ul li pre
 	text-transform: uppercase;
 	border: 1px #000000 solid;
 	padding: 1px;
+}
+.col
+{
+	float: left;
+	display: block;
+}
+.clear
+{
+	clear: both;
 }
 .center
 {
