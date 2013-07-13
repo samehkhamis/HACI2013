@@ -1,6 +1,6 @@
 body
 {
-    font: 11pt "Lucida Grande", "Lucida Sans Unicode", "Bitstream Vera Sans", sans-serif;
+    font: 10.5pt "Lucida Grande", "Lucida Sans Unicode", "Bitstream Vera Sans", sans-serif;
     color: #FFFFFF;
     background: #CCCCCC;
     height: 100%;
@@ -53,7 +53,7 @@ p
 }
 ul
 {
-	margin: 0 0 0 25px;
+	margin: 0 0 5px 25px;
 	padding: 0;
 	list-style-type: square;
 }
@@ -86,7 +86,7 @@ ul li pre
 }
 #nav div
 {
-	width: 920px;
+	width: 880px;
 	margin: 15px auto 15px auto;
 }
 #nav ul
@@ -108,7 +108,7 @@ ul li pre
 	text-decoration: none;
 	color: #333333;
 	font-size: 110%;
-	margin: 0 10px;
+	margin: 0 5px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -120,7 +120,7 @@ ul li pre
 }
 #main
 {
-    width: 920px;
+    width: 880px;
     margin: 50px auto 50px auto;
     text-align: left;
     padding: 15px 15px 15px 15px;
@@ -136,7 +136,7 @@ ul li pre
 .inner
 {
     background: #7788AA;
-    padding: 15px 50px 35px 50px;
+    padding: 15px 50px 30px 50px;
     margin: 0;
     -moz-border-radius: 25px 55px 25px 55px;
     -webkit-border-radius: 25px 55px 25px 55px;
@@ -162,7 +162,6 @@ ul li pre
 }
 #banner .logo
 {
-	/*background: transparent url(iccv13.jpg) 920px 250px no-repeat center center;*/
 	z-index: 1;
 	position: absolute;
 	top: 0;
@@ -207,10 +206,23 @@ ul li pre
 	border: 1px #000000 solid;
 	padding: 1px;
 }
-.col
+.lcol
 {
 	float: left;
 	display: block;
+}
+.rcol
+{
+	float: right;
+	display: block;
+}
+.lmargin
+{
+	margin-left: 5em;
+}
+ul.nobullet
+{
+	list-style: none;
 }
 .clear
 {
