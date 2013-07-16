@@ -206,6 +206,12 @@ ul li pre
 	border: 1px #000000 solid;
 	padding: 1px;
 }
+#countdown
+{
+	font-weight: bold;
+	text-decoration: underline;
+	margin-left: 1em;
+}
 .lcol
 {
 	float: left;
@@ -218,7 +224,7 @@ ul li pre
 }
 .lmargin
 {
-	margin-left: 5em;
+	margin-left: 4em;
 }
 ul.nobullet
 {

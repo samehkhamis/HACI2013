@@ -18,4 +18,13 @@ var scrollto = function(el) {
 	} while (e = e.offsetParent);
 	window.scroll(0, pos);
 	return false;
-}
+};
+
+var updatecountdown = function() {
+	var cd = document.getElementById('countdown');
+	var today = new Date();
+	var deadline = new Date("September 5, 2013 23:59:00 EDT");
+	var days = (deadline - today) / 1000 / 3600 / 24;
+	if (days > 0)
+		cd.textContent = parseInt(days) + " Days Left";
+};
