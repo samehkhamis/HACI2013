@@ -8,7 +8,7 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
-var scrollto = function(el) {
+var getelementpos = function(el) {
 	var main = document.getElementById('main');
 	var style = main.currentStyle || window.getComputedStyle(main);
 	var pos = -parseInt(style.marginTop) - parseInt(style.paddingTop);
@@ -16,7 +16,35 @@ var scrollto = function(el) {
 	do {
 		pos += e.offsetTop;
 	} while (e = e.offsetParent);
-	window.scroll(0, pos);
+	return pos;
+};
+
+var getcurrentpos = function() {
+	return (document.documentElement && document.documentElement.scrollTop || document.body && document.body.scrollTop || 0);
+}
+
+var scrollto = function(el) {
+	var targetpos = getelementpos(el);
+	window.scroll(0, targetpos);
+	return false;
+};
+
+var smoothscrollto = function(el) {
+	var time = 10;
+	var step = 100;
+	var currentpos = getcurrentpos();
+	var targetpos = getelementpos(el);
+	var scrolldirection = (targetpos - currentpos) >= 0 ? 1 : -1;
+	
+	var scrolltimer = setInterval(function() {
+		currentpos += scrolldirection * step;
+		if (scrolldirection * currentpos < scrolldirection * targetpos) {
+			window.scroll(0, currentpos);
+		} else {
+			window.scroll(0, targetpos);
+			clearInterval(scrolltimer);
+		}
+	}, time);
 	return false;
 };
 
