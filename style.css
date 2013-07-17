@@ -58,10 +58,6 @@ ul
 	padding: 0;
 	list-style-type: square;
 }
-li a
-{
-	display: inline-block;
-}
 ul li pre
 {
 	margin: 5px 5px 5px 15px;
@@ -87,7 +83,7 @@ ul li pre
     -webkit-box-shadow: #999 0 5px 5px;
     -moz-box-shadow: #999 0 5px 5px;
 	box-shadow: #999 0 5px 5px;
-	behavior: url(PIE.htc);
+	behavior: url(./PIE.htc);
 }
 #nav div
 {
@@ -114,10 +110,11 @@ ul li pre
 	color: #333333;
 	font-size: 110%;
 	margin: 0 5px;
+	display: inline-block;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-	behavior: url(PIE.htc);
+	behavior: url(./PIE.htc);
 }
 #nav li a:hover
 {
@@ -151,7 +148,7 @@ ul li pre
     -moz-box-shadow: #999 0 5px 5px;
     box-shadow: #999 0 5px 5px;
     position: relative;
-    behavior: url(PIE.htc);
+    behavior: url(./PIE.htc);
 }
 .inner p
 {
@@ -163,7 +160,7 @@ ul li pre
     -moz-border-radius: 0px 0px 25px 55px;
     -webkit-border-radius: 0px 0px 25px 55px;
     border-radius: 0px 0px 25px 55px;
-	behavior: url(PIE.htc);
+	behavior: url(./PIE.htc);
 }
 #banner .logo
 {
@@ -176,7 +173,7 @@ ul li pre
 	border-radius: 25px 55px 0px 0px;
     -moz-border-radius: 25px 55px 0px 0px;
     -webkit-border-radius: 25px 55px 0px 0px;
-	behavior: url(PIE.htc);
+	behavior: url(./PIE.htc);
 }
 #banner
 {
@@ -195,7 +192,7 @@ ul li pre
 	border-radius: 25px 55px 0px 0px;
     -moz-border-radius: 25px 55px 0px 0px;
     -webkit-border-radius: 25px 55px 0px 0px;
-	behavior: url(PIE.htc);
+	behavior: url(./PIE.htc);
 }
 #banner .content div
 {
