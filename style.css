@@ -201,6 +201,7 @@ ul li pre
 }
 .new
 {
+	color: black;
 	background-color: yellow;
 	font-size: 10px;
 	font-weight: bold;
