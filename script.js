@@ -51,7 +51,7 @@ var smoothscrollto = function(el) {
 var updatecountdown = function() {
 	var cd = document.getElementById('countdown');
 	var today = new Date();
-	var deadline = new Date("September 5, 2013 23:59:00 EDT");
+	var deadline = new Date("September 9, 2013 23:59:00 EDT");
 	var days = (deadline - today) / 1000 / 3600 / 24;
 	if (days > 0)
 		cd.innerHTML = parseInt(days) + " Days Left";
